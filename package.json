@@ -1,0 +1,27 @@
+{
+  "name": "mayukh_cypress",
+  "version": "1.0.0",
+  "description": "cypress_demo",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "pretest": "npm run tsc",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayukh2693/myCypressApp.git"
+  },
+  "author": "mayukh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayukh2693/myCypressApp/issues"
+  },
+  "homepage": "https://github.com/Mayukh2693/myCypressApp#readme",
+  "dependencies": {
+    "cypress": "^4.12.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "../node_modules",
+    "target": "es6",
+    "lib": ["es6", "dom"],                       
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true, 
+    "emitDecoratorMetadata": true,                
+    "experimentalDecorators": true,
+    "types": ["cypress"],
+    "outDir": "tsConvertedFiles"
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
