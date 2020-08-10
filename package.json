@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Mayukh2693/myCypressApp#readme",
   "dependencies": {
+    "@types/node": "^14.0.27",
     "cypress": "^4.12.1"
   },
   "devDependencies": {
