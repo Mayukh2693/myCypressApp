@@ -1,4 +1,4 @@
-import {homePage} from "./pageObj/homePage";
+import {homePage} from "../../pageObj/homePage";
 
 describe("HomePage", () => {
     let homepg = new homePage();
