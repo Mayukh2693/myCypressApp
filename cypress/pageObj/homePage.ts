@@ -19,4 +19,10 @@ export class homePage{
     getYesRadio(){
         return cy.get(':nth-child(2) > .custom-control-label');
     }
+    getWebTable(){
+        return cy.get(':nth-child(1) > .element-list > .menu-list > #item-3 > .text')
+    }
+    getDeleteRecord(){
+        return cy.get('#delete-record-1 > svg > path')
+    }
 }

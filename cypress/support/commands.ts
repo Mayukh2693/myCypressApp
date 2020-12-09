@@ -34,7 +34,7 @@ declare namespace Cypress {
 Cypress.Commands.add("GoogleCheck",() => {
     cy.get('.gLFyf').type("Something big is being written to check the things that get entered");
     cy.get('.FPdoLc > center > .gNO89b').click();
-    cy.get('#hdtb-msb-vis > :nth-child(2) > .q').click();
+    cy.get('h3 span').eq(1).click();
 });
 
 Cypress.Commands.add("FillForm", (name, email, address) => {
