@@ -1,10 +1,15 @@
 {
     "baseUrl":  "https://demoqa.com",
-    "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+    "reporter": "cypress-multi-reporters",
     "reporterOptions": {
-        "overwrite": false,
-        "html": false,
-        "json": true
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
     },
     "trashAssetsBeforeRuns": true
 }

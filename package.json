@@ -4,14 +4,13 @@
   "description": "cypress_demo",
   "main": "index.js",
   "scripts": {
-    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-tests-report.json",
-    "create:html:report": "marge --reportDir/myCypressApp TestReport cypress-tests-report.json",
-    "generate:html:report": "npm run merge:reports && npm run  create:html:report",
-    "tsc": "tsc",
-    "pretest": "npm run tsc",
-    "test": "cypress run",
-    "posttest": "npm run generate:html:report",
-    "clean:reports": "del cypress-tests-report.json && rmdir /q /s mochawesome-report"
+    "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
+    "pretest": "npm run clean:reports",
+    "scripts": "cypress run",
+    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+    "posttest": "npm run combine-reports && npm run generate-report",
+    "test" : "npm run scripts || npm run posttest"
   },
   "repository": {
     "type": "git",
@@ -28,6 +27,7 @@
     "cypress": "^4.12.1"
   },
   "devDependencies": {
+    "cypress-multi-reporters": "^1.4.0",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
