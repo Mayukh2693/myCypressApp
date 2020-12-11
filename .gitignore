@@ -4,4 +4,6 @@ videos
 mochawesome-report
 cypress-tests-report.json
 debug.log
-
+mocha
+mochareports
+screenshots

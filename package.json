@@ -6,11 +6,11 @@
   "scripts": {
     "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
     "pretest": "npm run clean:reports",
-    "scripts": "cypress run",
+    "scripts": "cypress run --record --key 4bb02289-cc70-457b-80dd-f2d02c4d36f3",
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run combine-reports && npm run generate-report",
-    "test" : "npm run scripts || npm run posttest"
+    "test": "npm run scripts || npm run posttest"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/Mayukh2693/myCypressApp#readme",
   "dependencies": {
     "@types/node": "^14.0.27",
-    "cypress": "^4.12.1"
+    "cypress": "^5.5.0"
   },
   "devDependencies": {
     "cypress-multi-reporters": "^1.4.0",

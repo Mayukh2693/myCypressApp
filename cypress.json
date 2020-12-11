@@ -1,15 +1,20 @@
 {
-    "baseUrl":  "https://demoqa.com",
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-        "reporterEnabled": "mochawesome",
-        "mochawesomeReporterOptions": {
-            "reportDir": "cypress/reports/mocha",
-            "quite": true,
-            "overwrite": false,
-            "html": false,
-            "json": true
-        }
-    },
-    "trashAssetsBeforeRuns": true
+  "baseUrl": "https://demoqa.com",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "trashAssetsBeforeRuns": true,
+  "projectId": "z8bcie",
+  "retries": {
+    "runMode": 1,
+    "openMode": 1
+  }
 }
