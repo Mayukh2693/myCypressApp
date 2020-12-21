@@ -1,7 +1,7 @@
 import { homeLocators } from "../../pageObj/homeLocators";
 
 describe("HomePage", () => {
-    let homepg = new homeLocators();
+    const homepg = new homeLocators();
     before(()=> {
         cy.visit("https://demoqa.com/profile");
     })
