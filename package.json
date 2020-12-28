@@ -4,7 +4,6 @@
   "description": "cypress_demo",
   "main": "index.js",
   "scripts": {
-
     "scripts": "cypress run --record --key 4bb02289-cc70-457b-80dd-f2d02c4d36f3 --parallel",
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
@@ -23,7 +22,7 @@
   "homepage": "https://github.com/Mayukh2693/myCypressApp#readme",
   "dependencies": {
     "@types/node": "^14.0.27",
-    "cypress": "^5.5.0"
+    "cypress": "^6.2.0"
   },
   "devDependencies": {
     "cypress-multi-reporters": "^1.4.0",

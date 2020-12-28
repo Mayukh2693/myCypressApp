@@ -1,0 +1,4 @@
+{
+    "GetEndpoint": "https://reqres.in/api/users?page=",
+    "PostEndpoint": "https://reqres.in/api/users"
+}
